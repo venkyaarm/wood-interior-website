@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap");
+
+body {
+  background: #000;
+  font-family: "Cinzel Decorative", serif;
+  color: gold;
+  margin: 0;
+  padding: 0;
+}
+
+.categories-container {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.glow-heading {
+  font-size: 2.5rem;
+  color: gold;
+  text-shadow: 0 0 15px goldenrod, 0 0 25px gold;
+  margin-bottom: 30px;
+}
+
+.categories-list {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.category-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: gold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px gold;
+}
+
+.category-button:hover {
+  box-shadow: 0 0 20px goldenrod, 0 0 35px gold;
+  transform: scale(1.05);
+}
+
+.category-button.active {
+  background: gold;
+  color: black;
+  font-weight: bold;
+}
+
+.products-section {
+  margin-top: 30px;
+}
+
+.glow-subheading {
+  font-size: 1.8rem;
+  color: gold;
+  text-shadow: 0 0 10px goldenrod, 0 0 20px gold;
+  margin-bottom: 25px;
+}
+
+.loading-text,
+.no-products {
+  font-size: 1.2rem;
+  color: #ffd700;
+}
+
+/* ✅ Category Products Grid */
+.categories-products-grid {
+  display: grid;
+  gap: 25px;
+  justify-items: center;
+  grid-template-columns: repeat(1, 1fr); /* default for very small screens */
+}
+
+/* Small mobile screens: 2 cards per row */
+@media (min-width: 480px) {
+  .categories-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablets / medium screens: 3 cards per row */
+@media (min-width: 768px) {
+  .categories-products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Desktop / large screens: 4 cards per row */
+@media (min-width: 1024px) {
+  .categories-products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Product Card */
+.product-card {
+  background: #111;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  color: gold;
+  border: 1px solid gold;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+  transition: 0.3s ease;
+  width: 100%;
+  max-width: 220px; /* ensures consistent card width */
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px gold, 0 0 35px goldenrod;
+}
+
+.product-image {
+  width: 150px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.product-price {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ffd700;
+}
+/* ✅ Category Products Grid */
+.categories-products-grid {
+  display: grid;
+  gap: 40px; /* ⬅ increase gap between product cards */
+  justify-items: center;
+  grid-template-columns: repeat(1, 1fr); /* default for very small screens */
+  padding: 20px; /* ⬅ add space around the whole grid */
+}
+
+/* Small mobile screens: 2 cards per row */
+@media (min-width: 480px) {
+  .categories-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablets / medium screens: 3 cards per row */
+@media (min-width: 768px) {
+  .categories-products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Desktop / large screens: 4 cards per row */
+@media (min-width: 1024px) {
+  .categories-products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,23 @@
+/* App.css should only handle global base styles, not product page styling */
+body {
+  background: #000;
+  margin: 0;
+  padding: 0;
+  font-family: 'Cinzel Decorative', serif;
+}
+
+/* Buttons - global look */
+button {
+  background: gold;
+  color: black;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 0 10px gold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 0 20px goldenrod, 0 0 30px gold;
+}

@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap");
+
+body {
+  background: #000;
+  font-family: "Cinzel Decorative", serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Centered Container */
+.admin-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: gold;
+  padding: 20px;
+}
+
+/* Title */
+.admin-title {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px gold, 0 0 20px goldenrod;
+}
+
+/* Input fields */
+.admin-input {
+  width: 100%;
+  max-width: 350px;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid gold;
+  border-radius: 8px;
+  background: black;
+  color: gold;
+  font-size: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px gold;
+  transition: 0.3s;
+}
+
+.admin-input:focus {
+  outline: none;
+  box-shadow: 0 0 20px goldenrod, 0 0 30px gold;
+}
+
+/* Buttons */
+.glow-button {
+  background: black;
+  color: gold;
+  padding: 12px 30px;
+  border: 2px solid gold;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-top: 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px gold;
+  transition: all 0.3s ease-in-out;
+}
+
+.glow-button:hover {
+  background: gold;
+  color: black;
+  box-shadow: 0 0 20px goldenrod, 0 0 40px gold;
+}
+
+/* Toggle Text */
+.toggle-text {
+  margin-top: 20px;
+  font-size: 0.95rem;
+}
+
+.toggle-link {
+  color: gold;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.toggle-link:hover {
+  color: goldenrod;
+  text-shadow: 0 0 8px gold;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .admin-title {
+    font-size: 1.8rem;
+  }
+  .admin-input {
+    max-width: 100%;
+  }
+  .glow-button {
+    width: 100%;
+  }
+}

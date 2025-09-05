@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap");
+
+body {
+  background: #000;
+  font-family: "Cinzel Decorative", serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: gold;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Title with neon glow */
+.login-title {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  text-shadow: 0 0 10px gold, 0 0 20px goldenrod;
+  line-height: 1.2;
+}
+
+/* Input fields */
+.login-input {
+  width: 100%;
+  max-width: 350px;
+  padding: 14px;
+  margin: 10px 0;
+  border: 2px solid gold;
+  border-radius: 8px;
+  background: black;
+  color: gold;
+  font-size: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px gold;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.login-input:focus {
+  outline: none;
+  box-shadow: 0 0 20px goldenrod, 0 0 30px gold;
+}
+
+/* Buttons */
+.glow-button {
+  background: black;
+  color: gold;
+  padding: 14px 30px;
+  border: 2px solid gold;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-top: 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px gold;
+  transition: all 0.3s ease-in-out;
+  max-width: 350px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.glow-button:hover {
+  background: gold;
+  color: black;
+  box-shadow: 0 0 20px goldenrod, 0 0 30px gold;
+}
+
+/* Toggle text */
+.toggle-text {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.toggle-link {
+  color: gold;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.toggle-link:hover {
+  color: goldenrod;
+  text-shadow: 0 0 8px gold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .login-input {
+    max-width: 90%;
+    font-size: 0.95rem;
+  }
+  .glow-button {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+  .toggle-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  .login-input {
+    max-width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  .glow-button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  .toggle-text {
+    font-size: 0.85rem;
+  }
+}

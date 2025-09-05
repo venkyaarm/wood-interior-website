@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap");
+
+body {
+  background: #000;
+  font-family: "Cinzel Decorative", serif;
+  color: gold;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-container {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.glow-heading {
+  font-size: 2.5rem;
+  color: gold;
+  text-shadow: 0 0 15px goldenrod, 0 0 25px gold;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 1.2rem;
+  color: #ffd700;
+  line-height: 1.6;
+  padding: 0 10px;
+}
+
+.contact-box {
+  background: #111;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.glow-subheading {
+  font-size: 1.8rem;
+  color: gold;
+  text-shadow: 0 0 10px goldenrod, 0 0 20px gold;
+  margin-bottom: 15px;
+}
+
+.email-display {
+  font-size: 1.3rem;
+  color: gold;
+  font-weight: bold;
+  text-shadow: 0 0 10px goldenrod, 0 0 20px gold;
+  margin-bottom: 20px;
+  word-break: break-word; /* ✅ prevents overflow on small screens */
+}
+
+.note {
+  font-size: 1rem;
+  color: #ffd700;
+  opacity: 0.9;
+  line-height: 1.8;
+  padding: 0 10px;
+}
+
+/* ✅ Mobile & Tablet Responsiveness */
+@media (max-width: 768px) {
+  .glow-heading {
+    font-size: 2rem;
+  }
+
+  .contact-info {
+    font-size: 1rem;
+  }
+
+  .contact-box {
+    padding: 20px;
+  }
+
+  .glow-subheading {
+    font-size: 1.4rem;
+  }
+
+  .email-display {
+    font-size: 1.1rem;
+  }
+
+  .note {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .glow-heading {
+    font-size: 1.7rem;
+  }
+
+  .contact-info {
+    font-size: 0.95rem;
+  }
+
+  .glow-subheading {
+    font-size: 1.2rem;
+  }
+
+  .email-display {
+    font-size: 1rem;
+  }
+
+  .note {
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  background-color: #000;
+  color: #FFD700;
+}
+
+/* Container */
+.categories-container {
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+.categories-header {
+  text-align: center;
+  margin-top: 30px;
+}
+.categories-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #FFD700;
+  text-shadow: 0 0 5px #FFD700;
+}
+.message {
+  margin-top: 10px;
+  color: #FFD700;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+/* Form */
+.category-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 30px 0;
+  width: 100%;
+  max-width: 400px;
+}
+.category-form input {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #FFD700;
+  background: #111;
+  color: #FFD700;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.category-form input:focus {
+  border-color: #fff;
+  box-shadow: 0 0 8px #FFD700;
+}
+.btn-add {
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+  background-color: #FFD700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(255, 215, 0, 0.5);
+}
+.btn-add:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.7);
+}
+
+/* Category List */
+.categories-list {
+  width: 100%;
+  max-width: 500px;
+  list-style: none;
+  padding: 0;
+}
+.category-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #FFD700;
+  transition: all 0.2s ease;
+}
+.category-item:hover {
+  box-shadow: 0 0 8px #FFD700;
+}
+.btn-delete {
+  background: #000;
+  color: #FFD700;
+  border: 1px solid #FFD700;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn-delete:hover {
+  background: #FFD700;
+  color: #000;
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .categories-title {
+    font-size: 2.2rem;
+  }
+  .category-form input, .btn-add {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .categories-title {
+    font-size: 1.8rem;
+  }
+  .category-form {
+    width: 90%;
+  }
+}

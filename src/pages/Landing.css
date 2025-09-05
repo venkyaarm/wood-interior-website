@@ -1,0 +1,88 @@
+/* Import premium font */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap");
+
+.landing-container {
+  min-height: 100vh;
+  background-color: #0d0d0d; /* Elegant soft black */
+  font-family: "Cinzel", serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertical center */
+  align-items: center; /* Horizontal center */
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  width: center;
+}
+
+/* Wrap for centering main content */
+.landing-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title */
+.landing-title {
+  color: #d4af37; /* Gold */
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Subtitle */
+.landing-subtitle {
+  color: #c5a93d;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+/* Buttons container */
+.landing-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Buttons */
+.landing-btn {
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #d4af37;
+  background-color: transparent;
+  border: 2px solid #d4af37;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.landing-btn:hover {
+  background-color: #d4af37;
+  color: #0d0d0d;
+}
+
+/* Footer */
+.landing-footer {
+  position: absolute;
+  bottom: 20px;
+  font-size: 0.9rem;
+  color: #888;
+  text-align: center;
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .landing-title {
+    font-size: 2rem;
+  }
+  .landing-subtitle {
+    font-size: 1rem;
+  }
+  .landing-btn {
+    width: 100%;
+    padding: 12px 0;
+  }
+}

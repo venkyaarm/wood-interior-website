@@ -1,0 +1,42 @@
+// src/components/AdminNavbar.jsx
+import React from "react";
+import { Link } from "react-router-dom";
+import "./AdminNavbar.css";
+
+export default function AdminNavbar() {
+  return (
+    <>
+      {/* ✅ Top Navbar */}
+      <nav className="admin-navbar">
+        <h2 className="admin-logo">Admin Panel</h2>
+        <ul className="admin-links">
+          <li>
+            <Link to="/admin/dashboard">Dashboard</Link>
+          </li>
+          <li>
+            <Link to="/admin/categories">Categories</Link>
+          </li>
+          <li>
+            <Link to="/admin/products">Products</Link>
+          </li>
+        </ul>
+      </nav>
+
+      {/* ✅ Mobile Footer Navigation */}
+      <div className="admin-footer">
+        <Link to="/admin/dashboard">
+          <i className="fas fa-tachometer-alt"></i>
+          <span>Dashboard</span>
+        </Link>
+        <Link to="/admin/categories">
+          <i className="fas fa-list"></i>
+          <span>Categories</span>
+        </Link>
+        <Link to="/admin/products">
+          <i className="fas fa-box"></i>
+          <span>Products</span>
+        </Link>
+      </div>
+    </>
+  );
+}
